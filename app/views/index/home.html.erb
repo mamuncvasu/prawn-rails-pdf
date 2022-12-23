@@ -1,0 +1,11 @@
+<h1>Index#home</h1>
+Total <%= @users.size %> items </br>
+<table>
+<% @users.each_with_index  do |u, i| %>
+    <tr>
+      <td><%= i.to_i+1 %></td>
+      <td><%= u.name %></td>
+      <td><%= u.email %></td>
+    </tr>
+<% end %>
+</table>
